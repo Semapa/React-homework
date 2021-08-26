@@ -1,6 +1,13 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import Counter from './components/counter'
+import 'bootstrap/dist/css/bootstrap.css'
 
-const element = <h1>Hello World меня зовут: Евгений Куракин</h1>
-
-ReactDOM.render(element, document.getElementById("root"))
+ReactDOM.render(
+  <React.StrictMode>
+    <Counter />
+  </React.StrictMode>,
+  document.getElementById('root')
+)
